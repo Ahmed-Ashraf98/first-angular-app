@@ -1,0 +1,28 @@
+footer{
+    color: var(--main-txt-color);
+}
+
+footer .top-footer{
+    background-color: var(--second-bg-color);
+    & ul.social-links{
+        & li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            margin-right:5px;
+
+            & a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+footer .bottom-footer{
+    background-color: var(--dark-bg-color);
+}
+

@@ -1,0 +1,43 @@
+<section id="portfolio" class="section-wrapper min-vh-100 d-flex flex-column justify-content-center align-items-center mt-5 mt-sm-2 py-4">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+
+
+        
+        <header class="section-header">
+            <h2 class="fs-1 text-uppercase mt-5 py-2 text-center">Portfolio Component</h2>
+            <app-starbox></app-starbox>
+        </header>
+
+        <div class="section-content">
+           
+    
+    
+            <div class="row gy-2">
+    
+                @for (portfolio of portfolio_list; track $index) {
+    
+                    <div class="col-md-4">
+                        <figure (click)="openCustomModal($index)" class="position-relative portfolio-box rounded rounded-3 overflow-hidden">
+                            <img [src]="portfolio.imgUrl" [alt]="portfolio.imgAlt" class="w-100">
+                            <figcaption class="img-layer d-flex flex-column justify-content-center align-items-center position-absolute">
+                                <i class="fs-2 fa-solid fa-plus"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+                }
+    
+            </div>
+    
+    
+            <div (click)="closeModal()" [class]=" (showModalBox ? 'd-flex': 'd-none' ) + ' position-fixed custom-modal flex-column justify-content-center align-items-center'">
+                <div (click)="stopPropagte($event)" class="custom-modal-box rounded rounded-3 w-50" >
+                    <figure class="position-relative d-flex justify-content-center portfolio-box rounded rounded-3 overflow-hidden m-0">
+                        <img [src]="modalImgUrl" [alt]="modalImgAlt" class="w-100 rounded rounded-3">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>

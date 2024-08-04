@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-bg-color: #1abc9c;
+    --main-bg-color-rgb: 26, 188, 156;
+    --second-bg-color: #2c3e50;
+    --dark-bg-color : #1a252f;
+    --main-txt-color: #fff;
+    --start-color:#fff;
+}
+
+*{
+    word-wrap: break-word;
+}
+
+body{
+    height: 100vh;
+}
+
+section.section-wrapper{
+    min-height: 550px;
+    & h2{
+        word-break: break-all;
+    }
+}
+
+.bg-section{
+    background-color: var(--main-bg-color);
+}
+
+
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1abc9c;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1aa78a;
+    --bs-btn-hover-border-color:  #fff;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #146c43;
+    --bs-btn-active-border-color: #13653f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #198754;
+    --bs-btn-disabled-border-color: #198754;
+}
+
+
+
+@media screen and (max-width:300px) {
+    section.section-wrapper{
+       margin-top:110px !important; 
+    }
+}

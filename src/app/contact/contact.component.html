@@ -1,0 +1,39 @@
+<section id="contact" class="section-wrapper min-vh-100 d-flex flex-column justify-content-center align-items-center mt-5 mt-sm-2 py-4">
+    <div class="container d-flex flex-column justify-content-center align-items-stretch">
+    
+      <header class="section-header text-center">
+            <h2 class="fs-1 text-uppercase mt-5 py-2">Contact Section</h2>
+            <app-starbox></app-starbox> 
+        </header>
+        
+        <form class="flex-grow-4">
+
+            <div class="mb-3">
+           
+                <input type="text" class="form-control border-0 border-bottom" id="userName" placeholder="User Name">
+              </div>
+
+              <div class="mb-3">
+          
+                <input type="number" max="99" min="1" class="form-control border-0 border-bottom" id="userAge" placeholder="User Age">
+              </div>
+
+              <div class="mb-3">
+              
+                <input type="email" class="form-control border-0 border-bottom" id="userEmail" placeholder="User Email">
+              </div>
+
+
+              <div class="mb-3">
+               
+                <input type="password" class="form-control border-0 border-bottom" id="userPass" placeholder="User Password">
+              </div>
+
+
+              <button (click)="preventSubmitAction($event)" type="submit" class="btn btn-success">Send Message</button>
+
+
+        </form>
+
+    </div>
+</section>

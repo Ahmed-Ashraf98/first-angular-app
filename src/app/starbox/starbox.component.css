@@ -1,0 +1,41 @@
+
+.star-box{
+    --star-lines-space:55%;
+}
+
+.star-box i{
+    color:var(--start-color);
+}
+
+.star-box::before, .star-box::after{
+    content: "";
+    position: absolute;
+    top:50%; 
+    transform: translateY(-50%);
+    width: 100px;
+    height: 8px;
+    border-radius: 20px;
+    background-color:var(--start-color); 
+}
+
+
+.star-box::before{
+    right:var(--star-lines-space);
+}
+
+.star-box::after{
+    left:var(--star-lines-space);
+}
+
+
+
+@media screen and (max-width: 260px) {
+    
+    .star-box{
+        --star-lines-space:60%;
+    }
+
+    .star-box::before, .star-box::after{
+        width: 40px;
+    }
+}

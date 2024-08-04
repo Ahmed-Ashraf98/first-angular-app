@@ -1,0 +1,36 @@
+nav.navbar{
+    background-color: var(--second-bg-color);
+    color: var(--main-txt-color);
+    font-weight: 700;
+    z-index: 9998;
+}
+
+nav .navbar-brand{
+    word-break: break-all;
+    white-space: wrap;
+}
+
+.navbar {
+    --bs-navbar-color: var(--main-txt-color);
+    --bs-navbar-hover-color: var(--main-txt-color);
+    --bs-navbar-active-color: var(--main-txt-color);
+    --bs-navbar-brand-color: var(--main-txt-color);
+    --bs-navbar-brand-hover-color:var(--main-txt-color);
+}
+
+.navbar-nav {
+    align-items: start;
+}
+
+.active{
+    border: 1px solid var(--second-bg-color);
+    border-radius: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.navbar-nav li a{
+
+    padding-left:10px;
+    padding-right: 10px;
+
+}
